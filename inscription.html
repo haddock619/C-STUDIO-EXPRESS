@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscription - Cianney Formation</title>
+  <title>Inscription - C-STUDIO EXPRESS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Cianney Formation</h1>
+      <h1>C-STUDIO EXPRESS</h1>
       <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="formations.html">Formations</a></li>
+          <li><a href="formations.html">Modules</a></li>
           <li><a href="inscription.html">S'inscrire</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -23,16 +23,27 @@
 
   <section class="signup">
     <div class="container">
-      <h2>Créer un compte</h2>
+      <h2>Créer un compte et choisir votre module</h2>
       <form id="signupForm">
         <label>Nom complet</label>
-        <input type="text" name="name" required>
+        <input type="text" name="name" placeholder="Votre nom" required>
 
         <label>Email</label>
-        <input type="email" name="email" required>
+        <input type="email" name="email" placeholder="Votre email" required>
 
         <label>Mot de passe</label>
-        <input type="password" name="password" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
+
+        <label>Choisir le module</label>
+        <select name="module" required>
+          <option value="">-- Sélectionnez un module --</option>
+          <option value="Principale">Principale</option>
+          <option value="Profil">Profil</option>
+          <option value="Large">Large</option>
+          <option value="Mobile">Mobile</option>
+          <option value="Detail">Detail</option>
+          <option value="Overhead">Overhead</option>
+        </select>
 
         <button type="submit" class="btn">S'inscrire</button>
       </form>
@@ -41,7 +52,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Cianney Formation | Email: cianney029@gmail.com | WhatsApp: +243848681325</p>
+      <p>© 2026 C-STUDIO EXPRESS | Email: cianney029@gmail.com | WhatsApp: +243848681325</p>
     </div>
   </footer>
 </body>
