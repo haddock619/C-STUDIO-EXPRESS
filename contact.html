@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Cianney Formation</title>
+  <title>Contact - C-STUDIO EXPRESS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header / Menu -->
   <header>
     <div class="container">
-      <h1>Cianney Formation</h1>
+      <h1>C-STUDIO EXPRESS</h1>
       <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="formations.html">Formations</a></li>
+          <li><a href="formations.html">Modules</a></li>
           <li><a href="inscription.html">S'inscrire</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -21,28 +22,32 @@
     </div>
   </header>
 
+  <!-- Section Contact -->
   <section class="contact">
     <div class="container">
       <h2>Contactez-nous</h2>
-      <form id="contactForm">
-        <label>Nom</label>
-        <input type="text" name="name" required>
+      <p>Vous avez une question sur nos formations ? Envoyez-nous un message !</p>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+      <form action="https://formsubmit.co/cianney029@gmail.com" method="POST">
+        <!-- Evite les spams et redirection après envoi -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://haddock619.github.io/C-STUDIO-EXPRESS/merci.html">
 
-        <label>Message</label>
-        <textarea name="message" required></textarea>
+        <label for="name">Nom</label>
+        <input type="text" name="name" id="name" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Votre email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Votre message" rows="5" required></textarea>
 
         <button type="submit" class="btn">Envoyer</button>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2026 Cianney Formation | Email: cianney029@gmail.com | WhatsApp: +243848681325</p>
-    </div>
-  </footer>
-</body>
-</html>
+      <p>© 2026 C-STUDIO EXPRESS | Email: cianney029@gmail.com | What
